@@ -11,7 +11,7 @@ select  * from employee where employee.id in (select awards.employee_id from awa
 ```
 
 Output:
- <img src="Q1.png" width="500" height="500">
+ <img src="Q1.png" width="800" height="300">
  
 
 ### Q2: Choose all employees who have never received an award (Nested Query)?
@@ -22,7 +22,7 @@ employee.role="Developer" AND employee.salary > (SELECT sum(employee.salary) fro
 ```
 
 Output:
- <img src="Q2.png" width="500" height="500">
+ <img src="Q2.png" width="800" height="300">
 
  
 ### Q3: Choose all Developers who make more than all Managers combined (Nested Query)?
@@ -33,7 +33,7 @@ employee.role="Developer" AND employee.salary > (SELECT max(employee.salary) fro
 ```
 
 Output:
- <img src="Q3.png" width="500" height="500">
+ <img src="Q3.png" width="800" height="300">
 
  
 ### Q4: Choose all Developers who make more money than any Manager (Nested Query)?
@@ -44,7 +44,7 @@ employee.role="Developer" AND employee.salary > (SELECT employee.salary from emp
 ```
 Output:
 
-  <img src="Q4.png" width="500" height="500">
+  <img src="Q4.png" width="800" height="300">
 
 ### Q5: Choose all employees whose salaries are higher than the average for their position. (Nested Query)?
 Query:
@@ -56,4 +56,4 @@ employee.role="Manager" AND employee.salary > (SELECT avg(employee.salary) from 
 ```
 
 Output:
- <img src="Q5.png" width="500" height="500">
+ <img src="Q5.png" width="800" height="300">

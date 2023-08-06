@@ -17,8 +17,7 @@ Output:
 ### Q2: Choose all employees who have never received an award (Nested Query)?
 Query:
 ```sql
-select  * from employee where
-employee.role="Developer" AND employee.salary > (SELECT sum(employee.salary) from employee where employee.role="Manager")
+select  * from employee where employee.id not in (select awards.employee_id from awards)
 ```
 
 Output:

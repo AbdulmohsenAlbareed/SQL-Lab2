@@ -1,4 +1,4 @@
-# SQL-Lab2
+# SQL-Lab2(Solution)
 
 # We will use the Employees and Awards table below:
 
